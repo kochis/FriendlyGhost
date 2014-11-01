@@ -509,7 +509,7 @@ main.content {
 }
 
 .nav-buttons a {
-  color: #9EABB3;
+  color: #717273;
   padding: 8px;
   text-decoration: none;
   text-transform: uppercase;
@@ -531,13 +531,22 @@ main.content {
   border-radius: 100%;
   border: 1px solid #EBF2F6;
   padding: 10px;
-  width: 130px;
+  width: 100px;
   background: white;
-  margin-top: -75px;
+  margin-top: -65px;
 }
 
 .post-content.about {
   margin-top: 50px;
+}
+
+.post-content a {
+  color: #6DBCE6;
+  text-decoration: none;
+}
+
+.post-content a:hover {
+  text-decoration: underline;
 }
 
 /* Create a bouncing scroll-down arrow on homepage with cover image */
@@ -734,6 +743,10 @@ main.content {
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
     color: #fff;
+}
+
+.page-title a {
+  text-decoration: none;
 }
 
 .page-description {
