@@ -1,8 +1,8 @@
-# Casper
+# FriendlyGhost
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/).
+A customized version of the default theme for [Ghost](http://github.com/tryghost/ghost/).
 
-To download, visit the [releases](https://github.com/TryGhost/Casper/releases) page.
+> To download, visit the [releases](https://github.com/TryGhost/Casper/releases) page.
 
 ## Copyright & License
 
