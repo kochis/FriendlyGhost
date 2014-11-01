@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+    {{! Add main sidebar to all pages}}
+    <header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+        <nav class="main-nav overlay clearfix">
+            {{#if @blog.logo}}
+              <a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>
+            {{/if}}
+            <!-- <a class="subscribe&#45;button icon&#45;feed" href="{{@blog.url}}/rss/">Subscribe</a> -->
+        </nav>
+        <div class="vertical">
+            <div class="main-header-content inner">
+                <h1 class="page-title"><a href="/">{{@blog.title}}</a></h1>
+                <h2 class="page-description">{{@blog.description}}</h2>
+                <div class="nav-buttons">
+                  <a class="" href="{{@blog.url}}">Home</a>
+                  <a class="" href="/about">About</a>
+                </div>
+            </div>
+        </div>
+        <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+    </header>
+
+    {{! Everything else gets inserted here }}
+    {{{body}}}
+
+    {{!--
+    <!-- <footer class="site&#45;footer clearfix"> -->
+    <!--      <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &#38;copy; {{date format="YYYY"}}</section> -->
+    <!--      <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section> -->
+    <!-- </footer> -->
+    --}}
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    {{! The main JavaScript file for Casper }}
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
+
+</body>
+</html>
