@@ -569,7 +569,7 @@ main.content {
 #contact-form input, #contact-form textarea {
   display: block;
   padding: 8px 10px;
-  width: 100%;
+  width: 90%;
   border: 1px solid #E0DFD7;
   border-radius: 3px;
   font-size: 1.4rem;
@@ -581,6 +581,44 @@ main.content {
 
 #contact-form textarea {
   height: 100px;
+}
+
+/* .submit-button { */
+/*   text-align: right; */
+/*   max-width: 500px; */
+/* } */
+
+#contact-submit-button {
+  font-family: "Open Sans", sans-serif;
+  transition: background ease 0.3s;
+  color: white;
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 9px 14px;
+  font-size: 1.1rem;
+  line-height: 1.428571429;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: none;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  border-radius: 3px;
+  -webkit-user-select: none;
+}
+
+#contact-submit-button:hover {
+  background: #8B8B8B;
+}
+
+#thank-you {
+  display: none;
+  text-align: center;
+  margin-top: 30px;
 }
 
 /* Create a bouncing scroll-down arrow on homepage with cover image */
