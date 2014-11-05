@@ -4,6 +4,30 @@ A customized version of the default theme for [Ghost](http://github.com/tryghost
 
 > To download, visit the [releases](https://github.com/kochis/FriendlyGhost/releases) page.
 
+## Installation
+
+Place the contents of this repo in the `content/themes` directory of your ghost blog. 
+
+You can do this either by cloning the repository directly
+
+From your ghost root folder:
+
+    cd content/themes
+    git clone git@github.com:kochis/FriendlyGhost.git
+
+
+Or by downloading and extracting the contents from [releases](https://github.com/kochis/FriendlyGhost/releases)
+
+
+## Setup
+
+### About Page
+This theme expects there to be an `about` static page. Create a new post with the title `about`, and check `Turn this post into a static page` in the post settings before publishing.
+
+### Snytax Highlighting
+This theme makes use of the [prismjs](http://prismjs.com/) library for syntax highlighting. If you want highlighting for a specific language, add that langauge (all lowercase) as tag for that post. As of right now, only once language can be used per post. (Ghost default styling will be used for code blocks if no tag is given)
+
+
 ## Copyright & License
 
 Copyright (c) 2014 Craig Kochis - Released under the MIT License.
